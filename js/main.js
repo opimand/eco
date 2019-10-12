@@ -224,6 +224,12 @@ overlay.addEventListener('click', function () {
   sidebar.classList.add('closed');
   overlay.classList.remove('show');
 });
+jquery__WEBPACK_IMPORTED_MODULE_2___default()('.navigation__btn').click(function () {
+  jquery__WEBPACK_IMPORTED_MODULE_2___default()('html, body').animate({
+    scrollTop: 0
+  }, 'slow');
+  return false;
+});
 
 /***/ })
 

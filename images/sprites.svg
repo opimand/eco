@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs>
+		<clipPath id="bones-line-a">
+			<path fill="#fff" d="M0 57V0h421v57zm420-1V1H1v5"/>
+		</clipPath>
+		<clipPath id="heart-line-a">
+			<path fill="#fff" d="M0 69V0h225v69zM224 6V1H65v67H1"/>
+		</clipPath>
+		<clipPath id="jkt-line-a">
+			<path fill="#fff" d="M0 55V0h443v55zm1-1v-5h352V1h89"/>
+		</clipPath>
+		<clipPath id="pee-line-a">
+			<path fill="#fff" d="M0 46V0h225v46zM1 1h64v39h159v5"/>
+		</clipPath>
+	</defs>
+<symbol id="bones-line" viewBox="0 0 421 57">
+	<path fill="none" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="50" stroke-width="2" d="M420 56v0V1v0H1v5" clip-path="url(&quot;#bones-line-a&quot;)" opacity=".4"/>
+</symbol>
+<symbol id="heart-line" viewBox="0 0 225 69">
+	<path fill="none" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="50" stroke-width="2" d="M1 68v0h64v0V1v0h159v5" clip-path="url(&quot;#heart-line-a&quot;)" opacity=".4"/>
+</symbol>
+<symbol id="jkt-line" viewBox="0 0 443 55">
+	<path fill="none" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="50" stroke-width="2" d="M442 1v0h-89v48H1v5" clip-path="url(&quot;#jkt-line-a&quot;)" opacity=".4"/>
+</symbol>
+<symbol id="pee-line" viewBox="0 0 225 46">
+	<path fill="none" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="50" stroke-width="2" d="M1 1v0h64v39h159v5" clip-path="url(&quot;#pee-line-a&quot;)" opacity=".4"/>
+</symbol>
+</svg>
