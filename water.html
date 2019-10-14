@@ -4,26 +4,36 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width">
-		<link rel="stylesheet" href="./css/main.css?v=1570880529053">
+		<link rel="stylesheet" href="./css/main.css?v=1571059098926">
 	</head>
 	<body>
 		<div class="index-wrapper water">
-			<div class="topnav" id="myTopnav"><a class="icon">&#9776;</a>
-				<div class="dropdown">
-					<button class="dropbtn">инженерные изыскания<span class="sprite-dropdown"></span></button>
-					<div class="dropdown-content"><a href="#">Инженерно-экологические</a><a href="#">Инженерно-геотехнические</a><a href="#">Инженерно-геодезические</a><a href="#">Инженерно-геологические</a></div>
+			<div class="topnav__fixed-wrap">
+				<div class="topnav__contacts-mob">
+					<div class="pnone-wrap"><img class="phone-icon" src="./images/sprites/png/phone-mob.png"><a class="phone" href="tel:+7 (495) 150-15-93">+7 (495) 150-15-93</a></div>
+					<div class="pnone-wrap"><img class="email-icon" src="./images/sprites/png/mail-mob.png"><a class="email" href="mailto:info@ecologees.ru">info@ecologees.ru</a></div>
 				</div>
-				<div class="dropdown">
-					<button class="dropbtn">лабораторные исследования<span class="sprite-dropdown"></span></button>
-					<div class="dropdown-content"><a href="#">Aнализ воды</a><a href="#">Aнализ воздуха</a></div>
+				<div class="topnav page-content" id="myTopnav"><a class="icon">&#9776;</a>
+					<div class="topnav__burger"><div class="bar1"></div>
+<div class="bar2"></div>
+<div class="bar3"></div>
+					</div>
+					<div class="dropdown">
+						<button class="dropbtn">инженерные изыскания<span class="sprite-dropdown"></span></button>
+						<div class="dropdown-content"><a href="#">Инженерно-экологические</a><a href="#">Инженерно-геотехнические</a><a href="#">Инженерно-геодезические</a><a href="#">Инженерно-геологические</a></div>
+					</div>
+					<div class="dropdown">
+						<button class="dropbtn">лабораторные исследования<span class="sprite-dropdown"></span></button>
+						<div class="dropdown-content"><a href="#">Aнализ воды</a><a href="#">Aнализ воздуха</a></div>
+					</div>
+					<div class="dropdown">
+						<button class="dropbtn">экологическая документация<span class="sprite-dropdown"></span></button>
+						<div class="dropdown-content"><a href="#">Перечень мероприятий по охране ОС</a><a href="#">Технический регламент</a><a href="#">Оценка воздействия на окружающую среду</a><a href="#">Санитарно-защитная зона</a><a href="#">Нормативы допустимых сбросов</a><a href="#">Предельно допустимые выбросы</a><a href="#">Проект нормативов образования отходов и лимитов их размещения</a></div><span class="sprite-dropdown"></span>
+					</div>
+					<div class="topnav__contacts"><a class="phone" href="tel:+7 (495) 150-15-93">+7 (495) 150-15-93</a><a class="email" href="mailto:info@ecologees.ru">info@ecologees.ru</a></div><a class="topnav__logo-mob" href="./">Ecologies</a>
 				</div>
-				<div class="dropdown">
-					<button class="dropbtn">экологическая документация<span class="sprite-dropdown"></span></button>
-					<div class="dropdown-content"><a href="#">Перечень мероприятий по охране ОС</a><a href="#">Технический регламент</a><a href="#">Оценка воздействия на окружающую среду</a><a href="#">Санитарно-защитная зона</a><a href="#">Нормативы допустимых сбросов</a><a href="#">Предельно допустимые выбросы</a><a href="#">Проект нормативов образования отходов и лимитов их размещения</a></div><span class="sprite-dropdown"></span>
-				</div>
-				<div class="topnav__contacts"><a class="phone" href="tel:+7 (495) 150-15-93">+7 (495) 150-15-93</a><a class="email" href="mailto:info@ecologees.ru">info@ecologees.ru</a></div>
 			</div>
-			<div class="sidebar closed" id="mySidebar">
+			<div class="sidebar closed page-content" id="mySidebar">
 				<button class="sidebar__close">&times;</button>
 				<div class="dropdown">
 					<button class="dropbtn">инженерные изыскания</button>
@@ -260,9 +270,28 @@
 					</div>
 				</div>
 			</div>
+			<hr class="page-divider form">
+			<form class="page-form">
+				<div class="page-form__wrapper">
+					<div class="page-form__title">Заказать анализ</div>
+					<div class="page-form__descr">Пожалуйста, оставьте ваши контакты, чтобы мы могли связаться с вами. Мы не передаем информацию третьим лицам.</div>
+					<div class="page-form__group">
+						<label for="name">Ваше имя :</label>
+						<input class="form-control" id="name" type="text" placeholder="" name="name">
+					</div>
+					<div class="page-form__group">
+						<label for="email">Ваш Email <span>*<span/></label>
+						<input class="form-control" id="email" type="email" placeholder="" name="email">
+					</div>
+				</div>
+				<button class="btn" type="submit">заказать</button>
+			</form>
+			<footer class="footer">
+				<div class="main__bottom-menu footer__wrap"><a class="main__bottom-menu-link logo" href="/">Ecologees</a><a class="main__bottom-menu-link" href="#">О нас</a><a class="main__bottom-menu-link" href="#">схема работы</a><a class="main__bottom-menu-link" href="#">юридическим лицам</a><a class="main__bottom-menu-link" href="#">карьера</a><a class="main__bottom-menu-link" href="#">контакты</a></div>
+			</footer>
 		</div>
 		<div class="overlay"></div>
-		<script src="./js/vendor.js?v=1570880529054"></script>
-		<script src="./js/main.js?v=1570880529054"></script>
+		<script src="./js/vendor.js?v=1571059098926"></script>
+		<script src="./js/main.js?v=1571059098926"></script>
 	</body>
 </html>
