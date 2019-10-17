@@ -816,11 +816,11 @@ button {
 
 .sidebar {
   height: 100%;
-  width: 320px;
+  width: 350px;
   background-color: #f9f9f9;
   position: fixed;
   top: 0;
-  padding-top: 89px;
+  padding-top: 150px;
   -webkit-box-shadow: 8px 0 5px -2px rgba(124, 124, 124, 0.43);
      -moz-box-shadow: 8px 0 5px -2px rgba(124, 124, 124, 0.43);
           box-shadow: 8px 0 5px -2px rgba(124, 124, 124, 0.43);
@@ -1137,9 +1137,9 @@ button {
       .protocol-inner .protocol-item.header {
         margin-top: 95px; } }
     @media (max-width: 797px) {
-      .protocol-inner .protocol-item:nth-child(4) {
+      .protocol-inner .protocol-item.header:nth-child(4) {
         margin-top: 95px; }
-      .protocol-inner .protocol-item:nth-child(2) {
+      .protocol-inner .protocol-item.header:nth-child(2) {
         margin-top: 95px; } }
   .protocol-inner .protocol__wrapper {
     width: 179px;
@@ -1539,7 +1539,7 @@ button {
   color: #505254;
   font-size: 17px;
   font-weight: 500;
-  margin-bottom: 24px; }
+  margin-bottom: 12px; }
 
 .pollutants__description {
   color: #7f8489;
@@ -1828,5 +1828,21 @@ button {
   font-weight: 400;
   margin-top: 22px;
   margin-bottom: 106px; }
+
+.eco__btn {
+  width: 240px;
+  height: 55px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px; }
+
+.eco__line {
+  width: 699px;
+  height: 0;
+  border: 2px solid #c2c2c2;
+  opacity: 0.4; }
 
 /*# sourceMappingURL=main.css.map */
