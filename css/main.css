@@ -1418,6 +1418,8 @@ button {
     background: url("../images/sprites/png/jkt-line.png") no-repeat; }
   .effect__list-title span.jkt.others:before {
     background: url("../images/sprites/png/others.png") center no-repeat; }
+  .effect__list-title span.others:before {
+    background: url("../images/sprites/png/others.png") center no-repeat; }
   .effect__list-title span.heart:before {
     background: url("../images/sprites/png/heart.png") center no-repeat; }
   .effect__list-title span.heart:after {
@@ -1434,6 +1436,10 @@ button {
     width: 223px;
     height: 44px;
     background: url("../images/sprites/png/pee-line.png") no-repeat; }
+  .effect__list-title span.cns:before {
+    background: url("../images/sprites/png/cns.png") center no-repeat; }
+  .effect__list-title span.rep:before {
+    background: url("../images/sprites/png/rep.png") center no-repeat; }
   @media (max-width: 1400px) {
     .effect__list-title span:after {
       display: none; } }
@@ -1472,6 +1478,9 @@ button {
   @media (max-width: 768px) {
     .effect__img {
       display: none; } }
+
+.effect.health {
+  margin-top: 71px; }
 
 .pollutants__title {
   color: #1c5781;
@@ -1542,10 +1551,16 @@ button {
     background: url("../images/dirtys.png") center no-repeat; }
   .pollutants__row.gaz:before {
     background: url("../images/gaz.png") center no-repeat; }
-  .pollutants__row.noize {
-    margin-bottom: 0; }
-    .pollutants__row.noize:before {
-      background: url("../images/noize.png") center no-repeat; }
+  .pollutants__row.noize:before {
+    background: url("../images/noize.png") center no-repeat; }
+  .pollutants__row.ekg:before {
+    background: url("../images/ekg.png") center no-repeat; }
+  .pollutants__row.dez:before {
+    background: url("../images/dez.png") center no-repeat; }
+  .pollutants__row.light:before {
+    background: url("../images/light.png") center no-repeat; }
+  .pollutants__row.aero:before {
+    background: url("../images/sprites/png/aero.png") center no-repeat; }
 
 .pollutants__subtitle {
   color: #505254;
@@ -1557,6 +1572,13 @@ button {
   color: #7f8489;
   font-size: 16px;
   font-weight: 400; }
+
+.pollutants__link {
+  color: #2f9ba8;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 40px;
+  text-decoration: underline; }
 
 .sources__title {
   color: #1c5781;
@@ -1673,20 +1695,6 @@ button {
   .footer .logo {
     position: relative;
     margin-right: 25px; }
-    .footer .logo:after {
-      position: absolute;
-      content: '';
-      top: 30px;
-      right: -41px;
-      width: 7px;
-      height: 7px;
-      -webkit-border-radius: 50px;
-         -moz-border-radius: 50px;
-              border-radius: 50px;
-      background-color: #1c5781; }
-      @media (max-width: 800px) {
-        .footer .logo:after {
-          right: -15px; } }
   @media (max-width: 768px) {
     .footer {
       display: none; } }
@@ -1820,7 +1828,7 @@ button {
   border: none;
   margin-top: 47px;
   display: block; }
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     .btn-order {
       display: none; } }
 
@@ -1834,7 +1842,7 @@ button {
     .air__title {
       margin-top: 28px; } }
 
-.air__descr {
+.air__description p {
   color: #7f8489;
   font-size: 16px;
   font-weight: 400;
@@ -1954,6 +1962,9 @@ button {
   font-weight: 400;
   margin-top: 22px;
   margin-bottom: 106px; }
+
+.eco .pollutants__row.noize {
+  margin-bottom: 0; }
 
 .eco__btn {
   -webkit-flex-basis: 240px;
