@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width">
-		<link rel="stylesheet" href="./css/main.css?v=1571448036759">
+		<link rel="stylesheet" href="./css/main.css?v=1571590144105">
 	</head>
 	<body>
 		<div class="index-wrapper water">
@@ -66,49 +66,90 @@
 						</div>
 						<button class="navigation__btn">Наверх</button>
 					</div>
-					<div class="breadcrumbs"><a class="breadcrumbs__link home" href="/">Главная /</a><a class="breadcrumbs__link" href="./career.html">Карьера</a></div>
-					<div class="air__title">Свяжитесь с нами</div>
+					<div class="breadcrumbs"><a class="breadcrumbs__link home" href="/">Главная /</a><a class="breadcrumbs__link" href="./law.html">Юридическим лицам</a></div>
+					<div class="air__title">Закажи анализы высшего качества</div>
 					<div class="air__wrapper">
 						<div class="air__description">
-							<p>Мы всегда открыты для людей, способных решать сложные задачи и готовых к постоянному развитию.</p>
+							<p>Мы верим, что самой большой ценностью в этом мире является ваше здоровье. Именно поэтому мы создавали Ecologees, чтобы сделать наш мир лучше. Мы проводим измерения экологических показателей, а также даем рекомендации по улучшению Вашего жилого пространства. В нашей работе мы строго придерживаемся требований санитарных правил и норм, посвященного жилым помещениям.</p>
 						</div>
 					</div>
-					<form class="career__form">
-						<div class="career__column left">
+					<div class="eco__row low">
+						<button class="eco__btn low">посмотреть презентацию</button>
+						<div class="eco__line"></div>
+					</div>
+					<div class="low__row">
+						<div class="low__column">
+							<div class="low__title water">Вода</div>
+							<ul class="low__list">
+								<li class="low__item water">Сточные воды</li>
+								<li class="low__item water">Радиология</li>
+								<li class="low__item water">Бактериология</li>
+							</ul>
+						</div>
+						<div class="low__column">
+							<div class="low__title soil">Почва</div>
+							<ul class="low__list">
+								<li class="low__item soil">Агрохимические анализы</li>
+								<li class="low__item soil">Санитарно-химическое обследование</li>
+								<li class="low__item soil">Оценка загрязненности</li>
+							</ul>
+						</div>
+						<div class="low__column">
+							<div class="low__title air">Воздух</div>
+							<ul class="low__list">
+								<li class="low__item air">Транспортное загрязнение</li>
+								<li class="low__item air">Промышленное загрязнение</li>
+								<li class="low__item air">Интегральная оценка</li>
+							</ul>
+						</div>
+						<div class="low__column">
+							<div class="low__title trash">Отходы</div>
+							<ul class="low__list">
+								<li class="low__item trash">Определение класса опасности отходов</li>
+								<li class="low__item trash">Биотестирование</li>
+								<li class="low__item trash">Биодиагностика</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button class="btn-order">заказать</button>
+			<div class="popup closed">
+				<form class="page-form">
+					<div class="page-form__wrapper">
+						<div class="page-form__title">Заказать анализ</div>
+						<div class="page-form__descr">Пожалуйста, оставьте ваши контакты, чтобы мы могли связаться с вами. Мы не передаем информацию третьим лицам.</div>
+						<div class="page-form__field_wrapp">
 							<div class="page-form__group">
-								<label for="name">Ваше имя<span>*<span/></label>
-								<input class="form-control" id="name" type="text" placeholder="" name="name" required>
+								<label for="name">Ваше имя :</label>
+								<input class="form-control" id="name" type="text" placeholder="" name="name">
 							</div>
 							<div class="page-form__group">
-								<label for="lastname">Вашa фамилия <span>*<span/></label>
-								<input class="form-control" id="lastname" type="text" placeholder="" name="lastname" required>
+								<label for="lastname">Ваша фамилия :</label>
+								<input class="form-control" id="lastname" type="text" placeholder="" name="lastname">
 							</div>
+						</div>
+						<div class="page-form__field_wrapp">
 							<div class="page-form__group">
 								<label for="email">Ваш Email <span>*<span/></label>
-								<input class="form-control" id="email" type="email" placeholder="" name="email" required>
+								<input class="form-control" id="email" type="email" placeholder="" name="email">
 							</div>
 							<div class="page-form__group">
-								<label for="phone">Ваш телефон <span>*<span/></label>
-								<input class="form-control" id="phone" type="tel" placeholder="" name="phone" required>
+								<label for="phone">Ваш телефон  :</label>
+								<input class="form-control" id="phone" type="text" placeholder="" name="phone">
 							</div>
-							<button class="page-form__btn" type="submit">Отправить</button>
 						</div>
-						<div class="career__column right">
-							<div class="page-form__group">
-								<label for="message">Текст сообщения</label>
-								<textarea class="form-control" id="message" type="text" placeholder="" name="message" required></textarea>
-							</div>
-							<div class="career__contacts-row"><a class="phone" href="tel:+7 (495) 150-15-93">+7 (495) 150-15-93</a><a class="email" href="mailto:info@ecologees.ru">info@ecologees.ru</a></div>
-						</div>
-					</form>
-				</div>
+						<button class="btn" type="submit">заказать</button>
+						<button class="popup__close"></button>
+					</div>
+				</form>
 			</div>
 			<footer class="footer career">
 				<div class="main__bottom-menu footer__wrap"><a class="main__bottom-menu-link logo" href="/">Ecologees</a><a class="main__bottom-menu-link" href="#">О нас</a><a class="main__bottom-menu-link" href="#">схема работы</a><a class="main__bottom-menu-link" href="#">юридическим лицам</a><a class="main__bottom-menu-link" href="#">карьера</a><a class="main__bottom-menu-link" href="#">контакты</a></div>
 			</footer>
 			<div class="overlay"></div>
 		</div>
-		<script src="./js/vendor.js?v=1571448036759"></script>
-		<script src="./js/main.js?v=1571448036759"></script>
+		<script src="./js/vendor.js?v=1571590144105"></script>
+		<script src="./js/main.js?v=1571590144105"></script>
 	</body>
 </html>
