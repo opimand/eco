@@ -557,7 +557,7 @@ button {
   .topnav .dropdown {
     position: relative; }
     @media (max-width: 1449px) {
-      .topnav .dropdown:nth-of-type(2) {
+      .topnav .dropdown.docs {
         display: none; } }
     .topnav .dropdown .dropbtn {
       cursor: pointer;
@@ -573,14 +573,45 @@ button {
       .topnav .dropdown .dropbtn:after {
         content: '';
         position: absolute;
-        top: 10px;
-        right: -15px;
+        top: 8px;
+        right: -20px;
         width: 13px;
         height: 9px;
         background: url("../images/sprites/png/dropdown.png") center no-repeat; }
         @media (max-width: 785px) {
           .topnav .dropdown .dropbtn:after {
-            top: 23px; } }
+            top: 8px; } }
+        @media (max-width: 720px) {
+          .topnav .dropdown .dropbtn:after {
+            top: 21px;
+            right: 10px; } }
+      .topnav .dropdown .dropbtn:before {
+        content: '';
+        position: absolute;
+        top: -28px;
+        right: -57px;
+        width: 1px;
+        height: 83px;
+        background-color: #ddd; }
+        @media (max-width: 1130px) {
+          .topnav .dropdown .dropbtn:before {
+            right: -31px; } }
+        @media (max-width: 1048px) {
+          .topnav .dropdown .dropbtn:before {
+            height: 64px; } }
+        @media (max-width: 852px) {
+          .topnav .dropdown .dropbtn:before {
+            display: none; } }
+      .topnav .dropdown .dropbtn a {
+        text-decoration: none;
+        color: #205880;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27.52px;
+        text-transform: uppercase;
+        letter-spacing: 0.72px; }
+        .topnav .dropdown .dropbtn a:visited {
+          color: #205880; }
     @media (max-width: 1440px) {
       .topnav .dropdown {
         padding-right: 15px; } }
@@ -680,7 +711,25 @@ button {
   .topnav .icon {
     font-size: 24px;
     color: #205880;
-    cursor: pointer; }
+    cursor: pointer;
+    position: relative; }
+    .topnav .icon:after {
+      position: absolute;
+      content: '';
+      top: -27px;
+      left: 44px;
+      width: 1px;
+      height: 82px;
+      background-color: #ddd; }
+      @media (max-width: 1048px) {
+        .topnav .icon:after {
+          height: 64px; } }
+      @media (max-width: 852px) {
+        .topnav .icon:after {
+          display: none; } }
+    @media (max-width: 720px) {
+      .topnav .icon {
+        margin-right: 40px; } }
   @media (max-width: 518px) {
     .topnav.page-content {
       background-color: #1c5781; }
@@ -1553,6 +1602,9 @@ button {
     background: url("../images/gaz.png") center no-repeat; }
   .pollutants__row.noize:before {
     background: url("../images/noize.png") center no-repeat; }
+  @media (max-width: 500px) {
+    .pollutants__row.noize.mobi {
+      margin-bottom: 10px; } }
   .pollutants__row.ekg:before {
     background: url("../images/ekg.png") center no-repeat; }
   .pollutants__row.dez:before {
