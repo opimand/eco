@@ -1798,9 +1798,9 @@ button {
     display: flex; }
   .page-form__group {
     margin-bottom: 22px;
-    -webkit-flex-basis: 434px;
-        -ms-flex-preferred-size: 434px;
-            flex-basis: 434px;
+    max-width: 434px;
+    width: 100%;
+    display: inline-block;
     margin-right: 51px; }
     @media (max-width: 768px) {
       .page-form__group {
@@ -1824,32 +1824,8 @@ button {
       width: 100%;
       height: 40px;
       padding: 0 5px; }
-  .page-form__field_wrapp {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-       -moz-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-    @media (max-width: 768px) {
-      .page-form__field_wrapp {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-           -moz-box-orient: vertical;
-           -moz-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-pack: start;
-        -webkit-justify-content: flex-start;
-           -moz-box-pack: start;
-            -ms-flex-pack: start;
-                justify-content: flex-start; } }
   .page-form .btn {
+    display: block;
     width: 240px;
     height: 55px;
     background-color: #1c5781;
