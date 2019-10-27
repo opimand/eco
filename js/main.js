@@ -206,6 +206,8 @@ const popUpClose = document.querySelector('.popup__close');
 const openProtocol = document.querySelectorAll('.protocol__btn');
 const orderBtn = document.querySelectorAll('.eco__btn');
 const orderBtnMob = document.querySelectorAll('.btn-order ');
+const pmoos__btn = document.querySelector('.pmoos__btn');
+const nav__order = document.querySelector('.navigation__order');
 
 for (let i = 0; i < orderBtnMob.length; i++) {
   orderBtnMob[i].addEventListener('click', () => {
@@ -288,6 +290,22 @@ if (burger) {
       sidebar.classList.remove('opened');
       sidebar.classList.add('closed');
     }
+  });
+}
+
+if (pmoos__btn) {
+  pmoos__btn.addEventListener('click', () => {
+    popUp.classList.remove('closed');
+    popUp.classList.add('opened');
+    overlay.classList.add('show');
+  });
+}
+
+if (nav__order) {
+  nav__order.addEventListener('click', () => {
+    popUp.classList.remove('closed');
+    popUp.classList.add('opened');
+    overlay.classList.add('show');
   });
 }
 

@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width">
-		<link rel="stylesheet" href="./css/main.css?v=1572185947444">
+		<link rel="stylesheet" href="./css/main.css?v=1572185950867">
 	</head>
 	<body>
 		<div class="index-wrapper water">
@@ -67,49 +67,68 @@
 						<button class="navigation__btn">Наверх</button>
 						<button class="navigation__order">Заказать</button>
 					</div>
-					<div class="breadcrumbs"><a class="breadcrumbs__link home" href="/">Главная /</a><a class="breadcrumbs__link" href="./contacts.html">Контакты</a></div>
-					<div class="air__title">Свяжитесь с нами</div>
+					<div class="breadcrumbs"><a class="breadcrumbs__link home" href="/">Главная /</a><a class="breadcrumbs__link home" href="/">Экологическая документация /</a><a class="breadcrumbs__link" href="./water.html">ПМООС</a></div>
+					<div class="air__title">Перечень мероприятий по охране окружающей среды</div>
 					<div class="air__wrapper">
 						<div class="air__description">
-							<p>Мы всегда открыты для людей, способных решать сложные задачи и готовых к постоянному развитию.</p>
+							<p>ПМ ООС является обязательной частью при прохождении градостроительной экспертизы.</p>
+							<p>Необходимость ПМ ООС регламентирована Постановлением Правительства РФ №87 от 16 февраля 2008 года «О составе разделов проектной документации и требованиях к их содержанию».</p>
+							<p>Разработка раздела «Перечень мероприятий по охране окружающей среды» (ПМ ООС) проходит на основании всестороннего анализа проектной документации предоставленной заказчиком и данных полученных в процессе оценочных работ непосредственно на объекте.</p>
+							<p>Только при условии полного выполнения мероприятий из данного перечня возможен ввод в эксплуатацию проектируемых зданий, сооружений, строений.</p>
+							<p>Для разработки «Перечня мероприятий по охране окружающей среды» необходимы следующие документы:</p>
+							<ul class="pmoos">
+								<li>- генеральный план;</li>
+								<li>- проект организации строительства;</li>
+								<li>- ситуационный план;</li>
+								<li>- геоподоснова, на которой обозначены границы участка и контуры проектируемого объекта;</li>
+								<li>- отчет о проведении инженерно-экологических изысканий;</li>
+								<li>- проект и технические условия присоединения к существующим инженерным сетям;</li>
+								<li>- гигиенические сертификаты на используемое сырьё, оборудование.</li>
+							</ul>
+							<p>После разработки раздел ПМООС в составе проектной документации сдается на государственную экспертизу или государственную экологическую экспертизу по результатам, которых выдается заключение.</p>
+							<p>Наша компания имеет огромный опыт разработки проектов ПМООС, поэтому гарантирует заказчику качественный комплекс работ в подготовке документации в соответствии с требованиями водного законодательства за максимально сжатые сроки.</p>
+							<button class="pmoos__btn">Заказать ПМООС</button>
 						</div>
 					</div>
-					<form class="career__form">
-						<div class="career__column left">
-							<div class="page-form__group">
-								<label for="name">Ваше имя<span>*<span/></label>
-								<input class="form-control" id="name" type="text" placeholder="" name="name" required>
+					<div class="popup closed">
+						<form class="page-form">
+							<div class="page-form__wrapper">
+								<div class="page-form__title">Заказать анализ</div>
+								<div class="page-form__descr">Пожалуйста, оставьте ваши контакты, чтобы мы могли связаться с вами. Мы не передаем информацию третьим лицам.</div>
+								<div class="page-form__field_wrapp">
+									<div class="page-form__group">
+										<label for="name">Ваше имя :</label>
+										<input class="form-control" id="name" type="text" placeholder="" name="name">
+									</div>
+									<div class="page-form__group">
+										<label for="lastname">Ваша фамилия :</label>
+										<input class="form-control" id="lastname" type="text" placeholder="" name="lastname">
+									</div>
+								</div>
+								<div class="page-form__field_wrapp">
+									<div class="page-form__group">
+										<label for="email">Ваш Email <span>*<span/></label>
+										<input class="form-control" id="email" type="email" placeholder="" name="email">
+									</div>
+									<div class="page-form__group">
+										<label for="phone">Ваш телефон  :</label>
+										<input class="form-control" id="phone" type="text" placeholder="" name="phone">
+									</div>
+								</div>
+								<button class="btn" type="submit">заказать</button>
+								<button class="popup__close"></button>
 							</div>
-							<div class="page-form__group">
-								<label for="lastname">Вашa фамилия <span>*<span/></label>
-								<input class="form-control" id="lastname" type="text" placeholder="" name="lastname" required>
-							</div>
-							<div class="page-form__group">
-								<label for="email">Ваш Email <span>*<span/></label>
-								<input class="form-control" id="email" type="email" placeholder="" name="email" required>
-							</div>
-							<div class="page-form__group">
-								<label for="phone">Ваш телефон <span>*<span/></label>
-								<input class="form-control" id="phone" type="tel" placeholder="" name="phone" required>
-							</div>
-							<button class="page-form__btn" type="submit">Отправить</button>
-						</div>
-						<div class="career__column right">
-							<div class="page-form__group">
-								<label for="message">Текст сообщения</label>
-								<textarea class="form-control" id="message" type="text" placeholder="" name="message" required></textarea>
-							</div>
-							<div class="career__contacts-row"><a class="phone" href="tel:+7 (495) 150-15-93">+7 (495) 150-15-93</a><a class="email" href="mailto:info@ecologees.ru">info@ecologees.ru</a></div>
-						</div>
-					</form>
+						</form>
+					</div>
 				</div>
 			</div>
-			<footer class="footer career">
+			<button class="btn-order">заказать</button>
+			<footer class="footer">
 				<div class="main__bottom-menu footer__wrap"><a class="main__bottom-menu-link logo" href="/">Ecologees</a><a class="main__bottom-menu-link" href="#">О нас</a><a class="main__bottom-menu-link" href="#">схема работы</a><a class="main__bottom-menu-link" href="#">юридическим лицам</a><a class="main__bottom-menu-link" href="#">карьера</a><a class="main__bottom-menu-link" href="#">контакты</a></div>
 			</footer>
 			<div class="overlay"></div>
 		</div>
-		<script src="./js/vendor.js?v=1572185947445"></script>
-		<script src="./js/main.js?v=1572185947445"></script>
+		<script src="./js/vendor.js?v=1572185950867"></script>
+		<script src="./js/main.js?v=1572185950867"></script>
 	</body>
 </html>

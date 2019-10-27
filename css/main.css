@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   src: url("../fonts/mintspirit-regular.woff") format("woff");
   font-family: "Mint Spirit";
@@ -429,13 +430,28 @@ button {
   .page-wrapp .navigation__wrapper {
     position: fixed;
     top: 250px;
-    right: 20px; }
+    right: 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
     @media (max-width: 847px) {
       .page-wrapp .navigation__wrapper {
         display: none; } }
+    @media (max-height: 699px) {
+      .page-wrapp .navigation__wrapper {
+        top: 111px; } }
   .page-wrapp .navigation {
     width: 180px;
-    height: 280px;
+    height: 242px;
     border: 2px solid #f1f2f7;
     background-color: #ffffff;
     display: -webkit-box;
@@ -488,7 +504,7 @@ button {
       font-weight: 500;
       line-height: 36px;
       cursor: pointer;
-      margin-top: 50px;
+      margin-top: 25px;
       padding-left: 20px;
       position: relative; }
       .page-wrapp .navigation__btn:after {
@@ -504,6 +520,21 @@ button {
         width: 13px;
         height: 9px;
         background: url("../images/sprites/png/dropdown.png") center no-repeat; }
+    .page-wrapp .navigation__order {
+      margin-top: 25px;
+      width: 180px;
+      height: 41px;
+      font-size: 14px;
+      background-color: #205880;
+      cursor: pointer;
+      color: #ffffff;
+      font-family: Lato;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 25px;
+      border: none;
+      /* Text style for "З, аказать" */
+      letter-spacing: 1.4px; }
 
 .page-divider {
   width: 100%;
@@ -1613,6 +1644,30 @@ button {
     background: url("../images/light.png") center no-repeat; }
   .pollutants__row.aero:before {
     background: url("../images/sprites/png/aero.png") center no-repeat; }
+  .pollutants__row.search:before {
+    background: url("../images/sprites/png/search.png") center no-repeat; }
+  .pollutants__row.wifi:before {
+    background: url("../images/sprites/png/wifi.png") center no-repeat; }
+  .pollutants__row.hidro:before {
+    background: url("../images/sprites/png/hidro.png") center no-repeat; }
+  .pollutants__row.photo:before {
+    background: url("../images/sprites/png/photo.png") center no-repeat; }
+  .pollutants__row.prob:before {
+    background: url("../images/sprites/png/prob.png") center no-repeat; }
+  .pollutants__row.natur:before {
+    background: url("../images/sprites/png/natur.png") center no-repeat; }
+  .pollutants__row.sbor:before {
+    background: url("../images/sprites/png/sbor.png") center no-repeat; }
+  .pollutants__row.map:before {
+    background: url("../images/sprites/png/map.png") center no-repeat; }
+  .pollutants__row.tz:before {
+    background: url("../images/sprites/png/tz.png") center no-repeat; }
+  .pollutants__row.road:before {
+    background: url("../images/sprites/png/road.png") center no-repeat; }
+  .pollutants__row.comp:before {
+    background: url("../images/sprites/png/comp1.png") center no-repeat; }
+  .pollutants__row.comp.mob {
+    margin-bottom: 0; }
 
 .pollutants__subtitle {
   color: #505254;
@@ -1908,6 +1963,28 @@ button {
   line-height: 25px;
   margin-top: 34px; }
 
+.air__description .pmoos {
+  color: #7f8489;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  list-style: none;
+  padding-left: 0; }
+  .air__description .pmoos__btn {
+    width: 240px;
+    height: 55px;
+    background-color: #1c5781;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    border: none;
+    margin-top: 25px;
+    margin-bottom: 102px;
+    cursor: pointer; }
+
 .air__wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2182,6 +2259,8 @@ button {
   @media (max-width: 518px) {
     .eco__structure-wrap {
       margin-top: 118px; } }
+  .eco__structure-wrap .eco__structure-column.mr {
+    margin-right: 100px; }
 
 .eco-column .pollutants__row:before {
   top: -12px; }
